@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+  <div class="g_home">
+    <a href="index.html">
+      <button>Go back home</button>
+    </a>
+  </div>
+  <div class="main_page">
+    <h1>Loan application</h1>
+    <div class="u_loan"></div>
+    <form id="myForm" onsubmit="return validateForm(event)">
+      <!-- <div class="m_input">
+        <h2>First name</h2>:
+        <input type="text" id="f_name" placeholder="Enter first name">
+        <p id="f_name_err" class="error"></p>
+      </div>
+      <div class="m_input">
+        <h2>Last name</h2>:
+        <input type="text" id="l_name" placeholder="Enter last name">
+        <p id="l_name_err" class="error"></p>
+      </div>
+      <div class="m_input">
+        <h2>Password</h2>:
+        <input type="password" id="password" placeholder="Enter password">
+        <p id="password_err" class="error"></p>
+      </div> -->
+      <div class="m_input">
+        <h2>Account Bal</h2>
+        <div class="main_put">
+          <input type="number" id="accountBalance" placeholder="$0.00">
+          <p id="accountBalance_err" class="error"></p>
+        </div>
+      </div>
+      <div class="m_input">
+        <h2>Loan Amount</h2>
+        <div class="main_put">
+          <input type="number" id="loanAmount" placeholder="$0.00">
+          <p id="loanAmount_err" class="error"></p>
+        </div>
+      </div>
+      <div class="m_input">
+        <h2>Last deposit date</h2>
+        <div class="main_put">
+          <input type="number" id="lastDepo" placeholder="number of days ago">
+          <p id="lastDepo_err" class="error"></p>
+        </div>
+      </div>
+      <div class="m_input">
+        <h2>Last loan collection date</h2>
+        <div class="main_put">
+          <input type="number" id="lastColl" placeholder="number of months ago">
+          <p id="lastColl_err" class="error"></p>
+        </div>
+      </div>
+      <div class="m_input">
+        <h2>Loan repayment period</h2>
+        <div class="main_put">
+          <input type="number" id="loanRep" placeholder="number of months">
+          <p id="loanRep_err" class="error"></p>
+        </div>
+      </div>
+      <div class="m_input">
+        <h2>Account type</h2>
+        <div class="main_put">
+          <input type="text" id="accType" placeholder="Current / Savings">
+          <p id="accType_err" class="error"></p>
+        </div>
+      </div>
+      <button>Submit</button>
+      <p id="loan" class="unavailable"></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
